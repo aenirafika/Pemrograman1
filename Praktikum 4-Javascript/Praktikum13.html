@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Praktikum 13</title>
+
+        <script language ="Javascript">
+        
+        function  radio_box () {
+            var ket= "";
+            if (frradio.jnskel.checked == true) {
+                ket = "Wanita";
+            }
+            else {
+                ket = "Pria";
+            }
+            alret('Anda salah seorang ' + ket);
+            }
+
+        function check_box() {
+            var ket = "";
+            var ket1 = "";
+            if (frcheck.bola.checked == true) {
+                ket ="Nonton Bola";
+            }
+            if (frcheck.tv.checked == true) {
+                ket ="Nonton TV";
+            }
+            alret ('Hobby anda ' +ket+''+ket1);
+        }
+            </script>
+    </head>
+
+    <body>
+
+        <form name ="frradio">
+            <h3>Memasukkan Data Dengan Objek Radio</h3><br>
+            <p><input type= "radio" value="wanita" name= "jnskel">Wanita</p>
+            <hr>
+            <p><input type="button" value = "CONFIRM onclick ="radio_box ()"> </p>
+            <input type="reset" value="RESET"></form>
+        </form>
+
+            <hr>
+
+            <form namae="frcheck">
+                    <h3>Memasukkan Data Dengan Objek Checkbox</h3><br>
+                    <p>Hobby anda :
+                    <input type= "checkbox" value="ON" name= "bola">Noton Sepak Bola</p>
+                    <input type="checkbox" value = "ON" name="Nonton Televisi </p>
+                    <hr>
+                    <p><input type="button" value = "CONFIRM onclick ="check_box ()"> </p>
+                    <input type="reset" value="RESET"></form> 
+            </form>
+    </body>
+</html>
